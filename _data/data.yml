@@ -1,0 +1,188 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: right # position of the sidebar : left or right
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+    download: True # Set to True if you want to enable PDF download
+
+    # Profile information
+    name: Consultant Name
+    tagline: Consultant Title
+    avatar: logo.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: consultant@spritecloud.com
+    timezone: Amsterdam
+    #nationality: Dutch
+    github: github.com/spriteCloud-consultant
+
+    languages:
+      title: Languages
+      info:
+        - idiom: English
+          level: C2
+
+        - idiom: Dutch
+          level: B2
+
+        - idiom: French
+          level: A1
+
+    interests:
+      title: Interests
+      info:
+        - item: Climbing
+          link:
+
+        - item: Snowboarding
+          link:
+
+        - item: Cooking
+          link:
+
+#career-profile:
+#    title: Career
+#    summary: |
+#      Brief career summary, goals and motivations
+
+experiences:
+    title: Experiences
+    info:
+      - role: Senior QA Engineer
+        time: 2021 - Present
+        company: spriteCloud
+        details: |
+          spriteCloud is a great consultancy.
+
+          Client #1
+            - Experience / achievement #1
+            - Experience / achievement #2
+            - ...
+
+          Client #2
+            - Experience / achievement #1
+            - Experience / achievement #2
+            - ...
+
+          Client #3
+            - Experience / achievement #1
+            - Experience / achievement #2
+            - ...
+
+      - role: previousRoleTitle#1
+        time: startDate - endDate
+        company: Company#2
+        details: |
+          Brief company description. <br>
+          
+          Brief role description.<br>
+            - Experience / achievement #1
+            - Experience / achievement #2
+            - ...
+
+      - role: PreviousRoleTitle#2
+        time: startDate - endDate
+        company: Company#3
+        details: |
+          Brief company description. <br>
+          
+          Brief role description.<br>
+            - Experience / achievement #1
+            - Experience / achievement #2
+            - ...
+
+education:
+  title: Education
+  info:
+    - degree: MSc in Computer Science
+      university: University of London
+      time: 2011 - 2012
+      details: |
+        Education description
+          - Bullet point
+          - Bullet point
+    - degree: BSc in Applied Mathematics
+      university: Bristol University
+      time: 2007 - 2011
+      details: |
+        Describe your study...
+          - Bullet point
+          - Bullet point
+
+projects:
+    title: Projects (or personal projects, OPTIONAL)
+    intro: >
+      Brief description of your contributions or side projects.
+    assignments:
+      - title: SideProject#1
+        link: "addYourLinkHere"
+        tagline: "Brief description"
+
+      - title: SideProject#2
+        link: "#hook"
+        tagline: "Brief description"
+
+      - title: Contribution#1
+        link: "#"
+        tagline: "Brief description"
+
+      - title: Contribution#2
+        link: "#"
+        tagline: "Brief description"
+
+certifications:
+  title: Certifications
+  list:
+    - name: Certification#1
+      start: startDate
+      end: 2021
+      organization: Certifier#1
+      credentialid: 111-222
+      credentialurl: credentialUrl
+      credentialname: credentialname
+      details: |
+        Details about certification here.
+
+    - name: Git learning
+      start: 2019
+      end:
+      organization: Certifier#2
+      credentialid: 111-222
+      credentialurl: credentialUrl
+      credentialname: credentialname
+      details: |
+        Details about certification here.
+
+skills:
+  title: Skills &amp; Tools
+
+  categories:
+    - title: Testing Tools
+      toolset:
+        - name: Selenium
+          years: 4 # years is mandatory
+          level: 100% # percentage
+
+        - name: Appium
+          years: 5
+          level: 90%
+
+        - name: Playwright
+          years: 2
+          level: 40%
+
+    - title: Programming Languages
+      toolset:
+        - name: Java
+          years: 5.5
+
+        - name: Python
+          years: 7
+          level: 60%
+
+        - name: JavaScript
+          years: 6
+          level: 30%

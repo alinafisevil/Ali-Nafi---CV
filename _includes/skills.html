@@ -1,0 +1,48 @@
+{% assign skills = site.data.data.skills %}
+{% if skills %}
+<section class="skills-section section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ skills.title }}
+  </h2>
+
+  <div class="skillset">
+
+    {% assign maxYears = 10 %}
+
+    {% for category in skills.categories %}
+    <br>
+    <h4>{{ category.title | capitalize }}</h4>
+    {% for skill in category.toolset %}
+    {% if skill.level == nil %}
+    {% if skill.years > 10 %}
+    {% assign skillLevel = 100 | append: '%' | remove: '.0' %}
+    {% else %}
+    {% assign skillLevel = skill.years | times: 10 | append: '%' | remove: '.0' %}
+    {% endif %}
+    {% else %}
+    {% assign skillLevel = {{skill.level}} %}
+    {% endif %}
+    <div class="item">
+      {% capture scaledLevel %}{{ skill.years | times: 100 | divided_by: maxYears }}{% endcapture %}
+
+      <h4 class="level-title">{{ skill.name }} - {{skill.years}} years </h4>
+
+      <div class="level-bar">
+        <div class="level-bar-inner" data-level="{{ skillLevel }}">
+          <!--<p style="color: white; font-size: 11px;"> {{skillLevel}} years</p> debugging p-->
+        </div>
+      </div><!--//level-bar-->
+
+    </div><!--//item-->
+    {% endfor %}
+    {% endfor %}
+
+  </div>
+
+</section><!--//skills-section-->
+{% endif %}
